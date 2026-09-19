@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(60deg, #153677, #4e085f);
+/*
+Essa função foi novidade pra mim, mais opções de estética
+deg = degress (angulo)
+
+alem de linear-gradient() tem outras funções?sim,
+conic-gradient
+radial-gradient
+
+as cores so sao aceitas em hexadecimal?
+aceitam todas as outras, string, rgb e hexadecimal
+
+posso alterar o angulo? 
+pode de 0deg a 360deg
+*/
+
+    padding:10px;
+
+}
+
+
+.centro{
+    width:100%;
+    max-width: 540px;
+    background-color: aliceblue;
+    margin: 100px auto 20px;
+    padding:40px 30px 70px;
+    border-radius: 10px;
+    justify-content: center; 
+    /* Parece que o alinhamento horizontal não funciona com svg ou to fazendo errado*/
+
+}
+
+.centro h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.centro h2 img{
+    width: 40px;
+    height: 40px;
+}
