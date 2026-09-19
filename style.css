@@ -36,7 +36,7 @@ pode de 0deg a 360deg
     padding:40px 30px 70px;
     border-radius: 10px;
     justify-content: center; 
-    /* Parece que o alinhamento horizontal não funciona com svg ou to fazendo errado*/
+    /* ? - Parece que o alinhamento horizontal não funciona com svg ou to fazendo errado*/
 
 }
 
@@ -49,6 +49,7 @@ pode de 0deg a 360deg
 .centro h2 img{
     width: 40px;
     height: 40px;
+    padding: 5px;
 }
 
 .adicionar{
@@ -94,8 +95,32 @@ button{
 
  */
     font-size: 17px;
-    padding: 12px 8px 12px 50px;
-    user-select: none; /* O que é isso? */
+    padding: 12px 8px 12px 0px; 
+    user-select: none; /* ? - O que é isso? */
+    cursor:pointer;
+    position: relative;
+}
+
+ul li ::before{ /* TODO - Entender isso aqui */
+    content: '';
+    position: absolute;
+    height: 28px;
+    width:28px;
+    border-radius: 50%;
+    background-image: url(img/radio-button-unchecked-svgrepo-com.png);
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left: 8px;
+
+}
 
 
+.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+.checked::before{
+    background-image: url(img/check-lists-svgrepo-com.png);
 }
