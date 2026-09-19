@@ -50,3 +50,52 @@ pode de 0deg a 360deg
     width: 40px;
     height: 40px;
 }
+
+.adicionar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    background: rgb(115, 115, 115);
+}
+
+input{
+    flex:1;
+    border:none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: rgb(245, 199, 80);
+    color:black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+
+
+#list_container li{
+    list-style: none;
+    text-align: center; 
+/* 
+ Centraliza o texto  no centro, relativo ao "pai" associado 
+ align-items - alinhas os textos?
+
+ ou é tudo o contrario?
+
+ */
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none; /* O que é isso? */
+
+
+}
