@@ -1,4 +1,16 @@
+22/09
 
+como não consigo resolver esse problema do botao para mudar de uncheked para checked, acho que a partir daqui eu altero pra ficar a minha cara. a ideia é alterar o codigo e adicionar uma função JS que carregue um <button> a esquerda da lista de tarefas, com um target que quando clicado, a função toggle altere o svg e risque a a palavra, o que nao ta acontecendo
+
+
+
+
+
+
+
+
+
+19/09
 
 O objetivo do projeto é aprofundar os conhecimentos em javascript, conhecendo sua sintaxe, funções, variaveis com o finalidade de se tornar a minha linguagem principal. 
 

@@ -102,7 +102,14 @@ button{
 }
 
 ul li ::before{ /* TODO - Entender isso aqui */
-    content: '';
+/*
+Aqui é o botao de "marcar a atividade como concluida" que não está funcionando e está na posição errada
+
+
+*/
+
+
+    content:'';
     position: absolute;
     height: 28px;
     width:28px;
@@ -110,19 +117,19 @@ ul li ::before{ /* TODO - Entender isso aqui */
     background-image: url(img/radio-button-unchecked-svgrepo-com.png);
     background-size: cover;
     background-position: center;
-    top:12px;
-    left: 8px;
+    top:0.125rem;
+    right: 28rem;
 
 }
 
 
-.checked{
+ul li.checked{
     color: #555;
     text-decoration: line-through;
 }
 
-.checked::before{
-    background-image: url(img/check-lists-svgrepo-com.png);
+ul li.checked::before{
+    background-image: url(img/checked-tick-svgrepo-com.png);
 }
 
 
