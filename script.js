@@ -41,8 +41,16 @@ function addTask(){
 // innerHTML é o que estiver entre as tags
 // então seria " complete o vazio de <li> com o valor de inputbox"
 
+
         listContainer.appendChild(li);
         // está pegando a variavel lá em cima e adicionando li
+
+        let btn = document.createElement("button");
+
+        btn.classList.add("checked");
+
+        li.appendChild(btn);
+
         let span = document.createElement("span"); // está adicionando uma tag para tornar clicavel
         span.innerHTML = "\u00d7"; // X
         li.appendChild(span);
@@ -54,6 +62,23 @@ function addTask(){
     saveData();
 }
 
+const btn = document.getElementsByClassName("checked");
+
+
+btn.addEventListener("click", () => {
+    btn.classList.toggle("ativo");
+});
+
+
+// Provavelmente isso que fiz é meio que redundante pois ja existi um .addEventListener("click") como o a seguir
+// Porem optei por criar um outro do zero para:
+// Não criar outra falha
+// Aprender a criar uma função do zero com base na minha visao
+
+// Mais pra frente eu tento juntar as duas
+
+
+
 listContainer.addEventListener("click",function(e){
 // está pegando a variavel la de cima (é a tag ul que envolve o li), adicionando a função de evento
 // para "prestar atenção" no click mas daqui pra frente não entendo.
@@ -63,7 +88,7 @@ listContainer.addEventListener("click",function(e){
 
     if(e.target.tagName === "LI"){
         // não entendo cada palavra
-         e.target.classlist.toogle("checked");// Aqui eu acho que vai trocar o svg para "concluido"
+         e.target.classList.toggle("checked");// Aqui eu acho que vai trocar o svg para "concluido"
          // target = alvo exato onde o dedo do usuário clicou
         saveData();// chamando a função que foi criada mais a frente para salvar os dados no navegador
     }

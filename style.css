@@ -71,7 +71,7 @@ input{
 }
 
 
-button{
+.add{
     border: none;
     outline: none;
     padding: 16px 50px;
@@ -101,13 +101,36 @@ button{
     position: relative;
 }
 
-ul li ::before{ /* TODO - Entender isso aqui */
+.checked{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    transform: translateY(-20%); /* ? - Não entendi esse comando */
+    background-image: url(img/radio-button-unchecked-svgrepo-com.png);
+}
+
+
+
+.centro ul li.ativo{
+    color: #555;
+    text-decoration: line-through;
+
+}
+
+.checked.ativo{
+    background-image: url(img/checked-tick-svgrepo-com.png);
+
+
+}
+
+
+
+
+
 /*
-Aqui é o botao de "marcar a atividade como concluida" que não está funcionando e está na posição errada
-
-
-*/
-
+ul li ::before{
 
     content:'';
     position: absolute;
@@ -121,16 +144,8 @@ Aqui é o botao de "marcar a atividade como concluida" que não está funcionand
     right: 28rem;
 
 }
+*/
 
-
-ul li.checked{
-    color: #555;
-    text-decoration: line-through;
-}
-
-ul li.checked::before{
-    background-image: url(img/checked-tick-svgrepo-com.png);
-}
 
 
 ul li span {
