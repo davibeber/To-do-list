@@ -108,7 +108,11 @@ input{
     position: absolute;
     left: 10px;
     transform: translateY(-20%); /* ? - Não entendi esse comando */
-    background-image: url(img/radio-button-unchecked-svgrepo-com.png);
+    background-image: url(img/button-unchecked-svg.png);
+
+
+    background-size: cover;
+    border:none;
 }
 
 
@@ -119,8 +123,8 @@ input{
 
 }
 
-.checked.ativo{
-    background-image: url(img/checked-tick-svgrepo-com.png);
+.centro ul li.ativo .checked{
+    background-image: url(img/checked-tick-svg.png);
 
 
 }

@@ -45,7 +45,7 @@ function addTask(){
         listContainer.appendChild(li);
         // está pegando a variavel lá em cima e adicionando li
 
-        let btn = document.createElement("button");
+        let btn = document.createElement("button");// ? - Eu fiz isso?
 
         btn.classList.add("checked");
 
@@ -62,12 +62,12 @@ function addTask(){
     saveData();
 }
 
-const btn = document.getElementsByClassName("checked");
+/* const btn = document.getElementsByClassName("checked");
 
 
 btn.addEventListener("click", () => {
     btn.classList.toggle("ativo");
-});
+}); */
 
 
 // Provavelmente isso que fiz é meio que redundante pois ja existi um .addEventListener("click") como o a seguir
@@ -88,7 +88,7 @@ listContainer.addEventListener("click",function(e){
 
     if(e.target.tagName === "LI"){
         // não entendo cada palavra
-         e.target.classList.toggle("checked");// Aqui eu acho que vai trocar o svg para "concluido"
+         e.target.classList.toggle("ativo");// Aqui eu acho que vai trocar o svg para "concluido"
          // target = alvo exato onde o dedo do usuário clicou
         saveData();// chamando a função que foi criada mais a frente para salvar os dados no navegador
     }
@@ -98,6 +98,10 @@ listContainer.addEventListener("click",function(e){
         //nao entendo cada palavra
         saveData();
     }
+    else if(e.target.tagName === "BUTTON"){ // ! - Com ajuda no Claude 
+    e.target.parentElement.classList.toggle("ativo");
+    saveData();
+}
 },false);// pq false? ainda não entendi
 
 // Nome da função,não é algo nativo
