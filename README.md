@@ -11,7 +11,7 @@ Projeto inspirado de: [https://youtu.be/G0jO8kUrg-I?si=sjH6DNMxrZTai7YQ](https:/
 ## Descrição
 
 O objetivo desse projeto era estudar javascript, aprofundar o estudo nessa linguagem e conhecer novas funções, como a função localStorage que salva as anotações na memória do navegador. 
-
+O projeto foi desenvolvido com foco primário em telas desktop/notebooks, priorizando o estudo da lógica em JavaScript.
 
 ## Ideias Futuras
 Caso eu decida voltar a mexer neste projeto no futuro, essas são algumas ideias que penso em adicionar:
