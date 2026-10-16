@@ -16,24 +16,19 @@ O projeto está esteticamente igual ao do video e a estrutura dos script não es
 Tbm preciso organizar o site para  mobile first
 
 
-24/09 
+# 24/09 
 
 Achei que fosse resolver o problema hoje mas não consegui. Ainda acredito que minha abordagem de usar um <button> e estilizar ele com um svg ou png(é esse o caso até o momento) é a mais certa do que apenas usar um svg puro com uma tag aleatória por causa da responsividade para deficiente visuais (tbm preciso trabalhar nisso). Vou dar um tempo nesse projeto e continuar outro dia, por enquanto vou focar em outra coisa.
 
 
-22/09
+# 22/09
 
 como não consigo resolver esse problema do botao para mudar de uncheked para checked, acho que a partir daqui eu altero pra ficar a minha cara. a ideia é alterar o codigo e adicionar uma função JS que carregue um <button> a esquerda da lista de tarefas, com um target que quando clicado, a função toggle altere o svg e risque a a palavra, o que nao ta acontecendo
 
 
 
 
-
-
-
-
-
-19/09
+# 19/09
 
 O objetivo do projeto é aprofundar os conhecimentos em javascript, conhecendo sua sintaxe, funções, variaveis com o finalidade de se tornar a minha linguagem principal. 
 
