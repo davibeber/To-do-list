@@ -7,24 +7,8 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(60deg, #153677, #4e085f);
-/*
-Essa função foi novidade pra mim, mais opções de estética
-deg = degress (angulo)
-
-alem de linear-gradient() tem outras funções?sim,
-conic-gradient
-radial-gradient
-
-as cores so sao aceitas em hexadecimal?
-aceitam todas as outras, string, rgb e hexadecimal
-
-posso alterar o angulo? 
-pode de 0deg a 360deg
-*/
-
+    background: linear-gradient(40deg, rgb(242, 221, 117), #d78202);
     padding:10px;
-
 }
 
 
@@ -33,23 +17,21 @@ pode de 0deg a 360deg
     max-width: 540px;
     background-color: aliceblue;
     margin: 100px auto 20px;
-    padding:40px 30px 70px;
+    padding:40px 30px 25px;
     border-radius: 10px;
-    justify-content: center; 
-    /* ? - Parece que o alinhamento horizontal não funciona com svg ou to fazendo errado*/
-
-}
-
-.centro h2{
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.centro h2 img{
-    width: 40px;
-    height: 40px;
-    padding: 5px;
+    justify-content: center;
+    
+    h2{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        
+        img{
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+        }
+    }
 }
 
 .adicionar{
@@ -59,98 +41,60 @@ pode de 0deg a 360deg
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
-    background: rgb(115, 115, 115);
+    background: rgb(161, 161, 161);
+    
+    input{
+        flex:1;
+        border:none;
+        outline: none;
+        background: transparent;
+        padding: 10px;
+    }
+    .add{
+        border: none;
+        outline: none;
+        padding: 16px 50px;
+        background-color: rgb(218, 83, 0);
+        color:white;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 40px;
+    }
 }
 
-input{
-    flex:1;
-    border:none;
-    outline: none;
-    background: transparent;
-    padding: 10px;
+#list_container{
+    li{
+        list-style: none;
+        text-align: center; 
+        font-size: 17px;
+        padding: 12px 8px 12px 0px; 
+        user-select: none; 
+        cursor:pointer;
+        position: relative;
+
+        .checked{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            position: absolute;
+            left: 10px;
+            transform: translateY(-20%); 
+            background-color: #cbcbcb;
+            background-size: cover;
+            border:none;
+        }
+    }
+} 
+
+.centro ul li{
+    &.ativo{
+        color: #555;
+        text-decoration: line-through;
+        .checked{
+            background-image: url(img/checked-tick-svg.png);
+        }
+    }
 }
-
-
-.add{
-    border: none;
-    outline: none;
-    padding: 16px 50px;
-    background-color: rgb(245, 199, 80);
-    color:black;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 40px;
-
-}
-
-
-#list_container li{
-    list-style: none;
-    text-align: center; 
-/* 
- Centraliza o texto  no centro, relativo ao "pai" associado 
- align-items - alinhas os textos?
-
- ou é tudo o contrario?
-
- */
-    font-size: 17px;
-    padding: 12px 8px 12px 0px; 
-    user-select: none; /* ? - O que é isso? */
-    cursor:pointer;
-    position: relative;
-}
-
-.checked{
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    position: absolute;
-    left: 10px;
-    transform: translateY(-20%); /* ? - Não entendi esse comando */
-    background-image: url(img/button-unchecked-svg.png);
-
-
-    background-size: cover;
-    border:none;
-}
-
-
-
-.centro ul li.ativo{
-    color: #555;
-    text-decoration: line-through;
-
-}
-
-.centro ul li.ativo .checked{
-    background-image: url(img/checked-tick-svg.png);
-
-
-}
-
-
-
-
-
-/*
-ul li ::before{
-
-    content:'';
-    position: absolute;
-    height: 28px;
-    width:28px;
-    border-radius: 50%;
-    background-image: url(img/radio-button-unchecked-svgrepo-com.png);
-    background-size: cover;
-    background-position: center;
-    top:0.125rem;
-    right: 28rem;
-
-}
-*/
-
-
 
 ul li span {
     position: absolute;
@@ -162,9 +106,9 @@ ul li span {
     color: #555;
     line-height: 40px;
     text-align: center;
-}
 
-ul li span:hover{
-    background: #edeef0;
-    border-radius: 50%;
+    &:hover{
+        background: #edeef0;
+        border-radius: 50%;
+    }
 }
